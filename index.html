@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DSA Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>DSA Visualizer</h2>
+
+  <div>
+    <button onclick="generateArray()">Generate Array</button>
+
+    <select id="algorithm">
+      <option value="bubble">Bubble Sort</option>
+      <option value="selection">Selection Sort</option>
+      <option value="insertion">Insertion Sort</option>
+      <option value="quick">Quick Sort</option>
+      <option value="merge">Merge Sort</option>
+      <option value="linear">Linear Search</option>
+      <option value="binary">Binary Search</option>
+    </select>
+
+    <input type="number" id="searchKey" placeholder="Key for Searching" />
+    <button onclick="runAlgorithm()">Visualize</button>
+  </div>
+
+  <div class="array-container" id="array"></div>
+
+  <div class="explanation" id="explanation"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
